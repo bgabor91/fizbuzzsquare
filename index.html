@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by bgabor91 (http://jsbin.com/lananal/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Fizbuzz négyzetek">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Practice JavaScript by drawing</title>
+</head>
+<body>
+  <canvas id="myCanvas" height="350" width="450" style="border: 1px solid black"></canvas>
+<script id="jsbin-javascript">
+var c = document.getElementById('myCanvas').getContext('2d');
+
+var x = 20;
+var y = 20;
+var boxWidth = 45;
+var boxHeight = 45;
+
+
+for(var i = 1; i <= 15; i++){
+ if (i % 3 == 0 && i% 5 == 0){
+c.fillStyle = 'rgba(0,255,0,0.5)'; 
+ } else if(i % 3 == 0){
+   c.fillStyle = 'rgba(0,0,255,0.5)'; 
+ } else if(i % 5 == 0){
+   c.fillStyle = 'rgba(250,253,99,0.5)'; 
+ } else{
+   c.fillStyle = 'rgba(62,62,62,0.5)'; 
+ }
+    c.fillRect(x,y,boxWidth,boxHeight);
+ x+=boxWidth*0.55;
+  y+=boxHeight*0.42;
+}
+</script>
+</body>
+</html>
