@@ -4,5 +4,5 @@
  - HTML5
  - JavaScript
  
-##Live Version
+## Live Version
 https://bgabor91.github.io/fizbuzzsquare/
